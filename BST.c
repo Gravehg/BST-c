@@ -212,7 +212,7 @@ BSTNode * remove_aux_bst(BSTNode *root, int element, int *result){
     if(element < root->element){
         root->left = remove_aux_bst(root->left, element, result);
         return root;
-    }else if(element > root>element){
+    }else if(element > root->element){
         root->right = remove_aux_bst(root->right, element, result);
         return root;
     }else{
